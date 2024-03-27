@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+        <script src="https://unpkg.com/grapesjs"></script>
+        <script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+        <script src="https://unpkg.com/grapesjs-navbar"></script>
+        <script src="https://unpkg.com/grapesjs-tui-image-editor"></script>
+        <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+    </head>
+    <body>
+        <div id="gjs"></div>
+        <script type="text/javascript">
+            var editor = grapesjs.init({
+                container : '#gjs',
+                plugins: ['gjs-blocks-basic', 'grapesjs-plugin-forms', 'grapesjs-tui-image-editor', 'grapesjs-navbar'],
+                pluginsOpts: {
+                    'grapesjs-tui-image-editor': {
+          config: {
+            includeUI: {
+              initMenu: 'filter',
+            },
+                },
+            }}});
+          </script>
+    </body>
+</html>
